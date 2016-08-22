@@ -18,7 +18,7 @@ class ObternerFecha:
 		import datetime, locale
 		locale.setlocale(locale.LC_ALL, "")
 		str(fecha)
-		dia = datetime.datetime.strptime(fecha, '%d-%m-%Y').strftime('El dia es: %A')
+		dia = datetime.datetime.strptime(fecha, '%d-%m-%Y').strftime('%A')
 		return(dia)
 
 
@@ -54,30 +54,27 @@ fecha2= ObternerFecha()
 b=fecha2.fechas(fecha1)
 
 
-hora2 = ObtenerHora()
-rs=hora2.horas(hora1)
 
-
-if (a == '2' or a == '1') and (b == 'lunes'):
+if (a == '2' or a == '1') and (b == 'Monday' or b == 'Lunes'):
 	hora2 = ObtenerHora()
 	rs=hora2.horas(hora1)
 	print (rs)
-elif (a == '3' or a == '4') and (b == 'martes'):
+elif (a == '3' or a == '4') and (b == 'Tuesday' or b == 'Martes'):
 	hora2 = ObtenerHora()
 	rs=hora2.horas(hora1)
 	print (rs)
-elif (a == '5' or a == '6') and (b == 'miercoles'):
+elif (a == '5' or a == '6') and (b == 'Wensday' or b == 'Miercoles'):
 	hora2 = ObtenerHora()
 	rs=hora2.horas(hora1)
 	print (rs)
-elif (a == '7' or a == '8') and (b == 'jueves'):
+elif (a == '7' or a == '8') and (b == 'Thuersday' or b == 'Jueves'):
 	hora2 = ObtenerHora()
 	rs=hora2.horas(hora1)
 	print (rs)
-elif (a == '9' or a == '0') and (b == 'viernes'):
+elif (a == '9' or a == '0') and (b == 'Friday' or b == 'Viernes'):
 	hora2 = ObtenerHora()
 	rs=hora2.horas(hora1)
-	print (rs)	
+	print (rs)
 else:
 	print ('Si Puede Salir')
 	

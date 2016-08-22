@@ -67,7 +67,7 @@ elif (a == '5' or a == '6') and (b == 'Wensday' or b == 'Miercoles'):
 	hora2 = ObtenerHora()
 	rs=hora2.horas(hora1)
 	print (rs)
-elif (a == '7' or a == '8') and (b == 'Thuersday' or b == 'Jueves'):
+elif (a == '7' or a == '8') and (b == 'Thursday' or b == 'Jueves'):
 	hora2 = ObtenerHora()
 	rs=hora2.horas(hora1)
 	print (rs)
